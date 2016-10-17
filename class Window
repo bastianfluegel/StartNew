@@ -1,0 +1,71 @@
+/***************************************************
+ *
+ *  Oberklasse   -/-
+ *  Klasse       Window
+ *
+ *  Attribute    -     : -
+ *               -     : -
+ *               -     : -
+ *
+ *  Methode      Konstruktor
+ *  Parameter    -      : -
+ *               -      : -
+ *  Rückgabe     -/-
+ *
+ *  Methode      .update
+ *  Parameter    sWinTitle  : String  (public)
+ *               iWinWidth  : Integer (public)
+ *               iWinHeight : Integer (public)
+ *               iWinPosX   : Integer (public)
+ *               iWinPosY   : Integer (public)
+ *  Rückgabe     -/-
+ *
+ *  Methode      .update
+ *  Parameter    -/-
+ *  Rückgabe     -/-r
+ *
+ ***************************************************/
+ 
+ class Window {
+   
+   // ATTRIBUTE
+   public String sWinTitle  = "";
+   public int    iWinSizeX  = 800;
+   public int    iWinSizeY  = 600;
+   public int    iWinPosX   = 100;
+   public int    iWinPosY   = 100;
+   
+   
+   // KONSTRUKTOR
+   Window() {
+     
+     // Code hier
+     
+   }
+   
+   // UPDATE
+   void update() {
+     
+     surface.setTitle(sWinTitle);
+     surface.setSize(iWinSizeX, iWinSizeY);
+     surface.setLocation(iWinPosX, iWinPosY);
+     
+   }
+   
+   
+   // UPDATE
+   void update(String _sWinTitle, int _iWinWidth, int _iWinHeight, int _iWinPosX, int _iWinPosY) {
+     
+     sWinTitle  = _sWinTitle;
+     iWinSizeX  = _iWinWidth;
+     iWinSizeY  = _iWinHeight;
+     iWinPosX   = _iWinPosX;
+     iWinPosY   = _iWinPosY;
+     
+     surface.setTitle(sWinTitle);
+     surface.setSize(iWinSizeX, iWinSizeY);
+     surface.setLocation(iWinPosX, iWinPosY);
+     
+   }
+
+ }
