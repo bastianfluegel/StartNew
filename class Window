@@ -3,26 +3,27 @@
  *  Oberklasse   -/-
  *  Klasse       Window
  *
- *  Attribute    -     : -
- *               -     : -
- *               -     : -
+ *  Attribute    sWinTitle  : String  (public)
+ *               iWinSizeX  : Integer (public)
+ *               iWinSizeY  : Integer (public)
+ *               iWinPosX   : Integer (public)
+ *               iWinPosY   : Integer (public)
  *
  *  Methode      Konstruktor
- *  Parameter    -      : -
- *               -      : -
+ *  Parameter    -/-
  *  Rückgabe     -/-
  *
  *  Methode      .update
  *  Parameter    sWinTitle  : String  (public)
- *               iWinWidth  : Integer (public)
- *               iWinHeight : Integer (public)
+ *               iWinSizeX  : Integer (public)
+ *               iWinSizeY  : Integer (public)
  *               iWinPosX   : Integer (public)
  *               iWinPosY   : Integer (public)
  *  Rückgabe     -/-
  *
  *  Methode      .update
  *  Parameter    -/-
- *  Rückgabe     -/-r
+ *  Rückgabe     -/-
  *
  ***************************************************/
  
@@ -54,11 +55,11 @@
    
    
    // UPDATE
-   void update(String _sWinTitle, int _iWinWidth, int _iWinHeight, int _iWinPosX, int _iWinPosY) {
+   void update(String _sWinTitle, int _iWinSizeX, int _iWinSizeY, int _iWinPosX, int _iWinPosY) {
      
      sWinTitle  = _sWinTitle;
-     iWinSizeX  = _iWinWidth;
-     iWinSizeY  = _iWinHeight;
+     iWinSizeX  = _iWinSizeX;
+     iWinSizeY  = _iWinSizeY;
      iWinPosX   = _iWinPosX;
      iWinPosY   = _iWinPosY;
      
